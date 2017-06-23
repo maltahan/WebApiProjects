@@ -18,7 +18,11 @@ namespace WebApiProjects.Controllers
         private Northwind db = new Northwind();
 
         // GET: api/Orders
-        
+        public string test()
+        {
+            return "Jsut for test";
+        }
+
         public IQueryable<Order> GetOrders()
         {
             return db.Orders;

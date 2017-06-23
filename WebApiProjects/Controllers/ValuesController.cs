@@ -21,6 +21,12 @@ namespace WebApiProjects.Controllers
             return "value";
         }
 
+        // GET api/values/5
+        public string test()
+        {
+            return "Nur Für test";
+        }
+
         // POST api/values
         public void Post([FromBody]string value)
         {
