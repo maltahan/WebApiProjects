@@ -18,6 +18,7 @@ namespace WebApiProjects.Controllers
         private Northwind db = new Northwind();
 
         // GET: api/Orders
+        
         public IQueryable<Order> GetOrders()
         {
             return db.Orders;
